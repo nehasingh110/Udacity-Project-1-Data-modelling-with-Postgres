@@ -41,7 +41,7 @@
     
     
 ### Example use cases for song play analysis
-1. To find out the most played song : select song_id, count(*) from songplays where song_id not in ('None') group by song_id order by count(*) desc limit 1
+1. To find out the most played song : select song_id, count(`*`) from songplays where song_id not in ('None') group by song_id order by count(*) desc limit 1
 2. To find out which artist's songs are most played
 3. To find out which user likes which artist the most
 4. To find out which user likes which songs
