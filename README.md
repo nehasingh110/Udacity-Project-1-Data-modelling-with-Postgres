@@ -1,4 +1,4 @@
-###Purpose of the database
+#Purpose of the database
 1. To help the company maintain the data systematically in a star schema database
 2. To help them do analysis with simple queries and fast aggregations on the fact table and extra information can be fetcehd from the dimension tables by using joins
 3. This database will help them keep the database consistent. For example if a user related information need to be updated they'll just update one table which is the user table
