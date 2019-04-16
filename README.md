@@ -1,11 +1,11 @@
 # Udacity_Project1
 <h3>Purpose of the database<h3>
-    <ol>
-    <li>To help the company maintain the data systematically in a star schema database</li>
-    <li>To help them do analysis with simple queries and fast aggregations on the fact table and extra information can be fetcehd from the dimension tables by using joins</li>
-    <li>This database will help them keep the database consistent. For example if a user related information need to be updated they'll just update one table which is the user table</li>
-    <li>This database will occupy the minimal space</li>
-    </ol>
+<ol>
+<li> To help the company maintain the data systematically in a star schema database</li>
+<li>To help them do analysis with simple queries and fast aggregations on the fact table and extra information can be fetcehd from the dimension tables by using joins</li>
+<li>This database will help them keep the database consistent. For example if a user related information need to be updated they'll just update one table which is the user table</li>
+<li>This database will occupy the minimal space</li>
+</ol>
     
     
 <h3>Justification of the database schema design<h3>
