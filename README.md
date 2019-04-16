@@ -1,4 +1,4 @@
-# Purpose of the database
+### Purpose of the database
 1. To help the company maintain the data systematically in a star schema database
 2. To help them do analysis with simple queries and fast aggregations on the fact table and extra information can be fetcehd from the dimension tables by using joins
 3. This database will help them keep the database consistent. For example if a user related information need to be updated they'll just update one table which is the user table
@@ -6,7 +6,7 @@
 
     
     
-###Justification of the database schema design   
+### Justification of the database schema design   
 1. First the dimension tables will be created since the dependencies have been set within the fact table
 2. All the dimension tables have been created with a primary key that helps find unique records from the respective tables. All these primary keys are being referenced in the fact tables
 3. The fact table also contains a primary key and lot of foreign keys for each dimension table to fetch the related information that would have got duplicted in the fact table
@@ -14,7 +14,7 @@
 
     
     
-###Justification of the ETL pipeline
+### Justification of the ETL pipeline
 1. In the main function we're creating a connection to the postgres database
 2. We are creating a cursor to execute the queries
 3. We are calling a function called process_data by passing 4 parameters: cursor, connection, filepath and function name
@@ -40,7 +40,7 @@
 
     
     
-###Example use cases for song play analysis
+### Example use cases for song play analysis
 1. To find out the most played song : select song_id, count(*) from songplays where song_id not in ('None') group by song_id order by count(*) desc limit 1
 2. To find out which artist's songs are most played
 3. To find out which user likes which artist the most
@@ -53,14 +53,14 @@
 
 
 
-###How to run the Python scripts
+### How to run the Python scripts
 1. Open Console for Python and run create_tables.py to create tables using the command '%run create_tables.py'
 2. Run etl.py using the command '%run etl.py'
     - Look for output regarding how many files out of total number of files got processes
 
 
 
-###Explanation of repository files
+### Explanation of repository files
 1. First we'll update the file called sql_queries.py. The drop, create and insert queries need to be created in this file. These queries will keep changing with time as we get to know more about the data types and the contraints needed.
     - song_select query is created later in the project while developing code for ETL process in etl.ipynb after understand the logic required for song_select query
 2. After that we run create_tables.py that 
